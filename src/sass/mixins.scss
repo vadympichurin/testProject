@@ -1,0 +1,30 @@
+@import './colors.scss';
+@import './fonts.scss';
+
+@mixin btn_headerFooter ($backc, $paddingHeig: 18px, $paddingWid: 45px) {
+    background-color: $backc;
+    color: $white_text;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: $paddingHeig, $paddingWid;
+
+}
+
+
+@mixin btn_header ($bcg_color, $color, $padding: 12px 39px 12px 22px) {
+    background-color: $bcg_color;
+    padding: $padding;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: $color;
+    border-radius: 8px;
+    outline: none;
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 5px;
+}
+
